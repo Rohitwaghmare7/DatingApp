@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "542022981816",
+    "project_id": "datingapp-e2c9e",
+    "storage_bucket": "datingapp-e2c9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542022981816:android:03986e14e8225ef5febc4d",
+        "android_client_info": {
+          "package_name": "com.example.datingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0_7a6-gHIuDeJFFd02B4HU59hk6f7InI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

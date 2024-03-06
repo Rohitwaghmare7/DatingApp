@@ -16,26 +16,26 @@ import 'package:flutter/foundation.dart'
 /// ```
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
-    if (kIsWeb) {
-      return web;
-    }
+    // if (kIsWeb) {
+    //   return web;
+    // }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
         return ios;
-      case TargetPlatform.macOS:
-        return macos;
-      case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
-      case TargetPlatform.linux:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for linux - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+      // case TargetPlatform.macOS:
+      //   return macos;
+      // case TargetPlatform.windows:
+      //   throw UnsupportedError(
+      //     'DefaultFirebaseOptions have not been configured for windows - '
+      //     'you can reconfigure this by running the FlutterFire CLI again.',
+      //   );
+      // case TargetPlatform.linux:
+      //   throw UnsupportedError(
+      //     'DefaultFirebaseOptions have not been configured for linux - '
+      //     'you can reconfigure this by running the FlutterFire CLI again.',
+      //   );
       default:
         throw UnsupportedError(
           'DefaultFirebaseOptions are not supported for this platform.',
@@ -43,15 +43,15 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBQAbf0HzmBbW6cbf0ZBXZwkdpHagubYgs',
-    appId: '1:542022981816:web:d25f676c1f5b1a9bfebc4d',
-    messagingSenderId: '542022981816',
-    projectId: 'datingapp-e2c9e',
-    authDomain: 'datingapp-e2c9e.firebaseapp.com',
-    storageBucket: 'datingapp-e2c9e.appspot.com',
-    measurementId: 'G-DF4JBYX49L',
-  );
+  // static const FirebaseOptions web = FirebaseOptions(
+  //   apiKey: 'AIzaSyBQAbf0HzmBbW6cbf0ZBXZwkdpHagubYgs',
+  //   appId: '1:542022981816:web:d25f676c1f5b1a9bfebc4d',
+  //   messagingSenderId: '542022981816',
+  //   projectId: 'datingapp-e2c9e',
+  //   authDomain: 'datingapp-e2c9e.firebaseapp.com',
+  //   storageBucket: 'datingapp-e2c9e.appspot.com',
+  //   measurementId: 'G-DF4JBYX49L',
+  // );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyD0_7a6-gHIuDeJFFd02B4HU59hk6f7InI',
@@ -70,12 +70,12 @@ class DefaultFirebaseOptions {
     iosBundleId: 'com.example.datingapp',
   );
 
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAYVPNasQWcc1zwdkPrOznExfjs0KNeeSo',
-    appId: '1:542022981816:ios:5bc8b6cef2edd30efebc4d',
-    messagingSenderId: '542022981816',
-    projectId: 'datingapp-e2c9e',
-    storageBucket: 'datingapp-e2c9e.appspot.com',
-    iosBundleId: 'com.example.datingapp.RunnerTests',
-  );
+  // static const FirebaseOptions macos = FirebaseOptions(
+  //   apiKey: 'AIzaSyAYVPNasQWcc1zwdkPrOznExfjs0KNeeSo',
+  //   appId: '1:542022981816:ios:5bc8b6cef2edd30efebc4d',
+  //   messagingSenderId: '542022981816',
+  //   projectId: 'datingapp-e2c9e',
+  //   storageBucket: 'datingapp-e2c9e.appspot.com',
+  //   iosBundleId: 'com.example.datingapp.RunnerTests',
+  // );
 }

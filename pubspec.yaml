@@ -39,6 +39,15 @@ dependencies:
   google_fonts: ^5.1.0
   flutter_svg: ^0.22.0
   font_awesome_flutter: ^10.7.0
+  intl: ^0.17.0
+  image_picker: ^1.0.7
+  firebase_auth: ^4.16.0
+  cloud_firestore: ^4.14.0
+  firebase_storage: ^11.6.0
+  geolocator: ^11.0.0
+  geocoding: ^2.2.0
+  shared_preferences: ^2.0.8
+
 
 dev_dependencies:
   flutter_test:
